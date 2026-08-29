@@ -1,0 +1,65 @@
+IoT WEATHER STATION
+===================
+
+COMPONENTS
+----------
+
+1. Arduino Uno
+2. DHT22 Temperature and Humidity Sensor
+3. Breadboard
+4. Jumper Wires
+
+
+DHT22 CONNECTIONS
+-----------------
+
+DHT22 VCC  → Arduino 5V
+DHT22 DATA → Arduino Digital Pin 2
+DHT22 GND  → Arduino GND
+
+
+PIN CONFIGURATION
+-----------------
+
+DHT22 DATA → Digital Pin 2
+
+
+WORKING
+-------
+
+The DHT22 sensor measures temperature and humidity.
+
+Arduino reads the sensor values every 2 seconds.
+
+The temperature and humidity values are displayed
+on the Serial Monitor.
+
+
+SIMPLE CIRCUIT
+--------------
+
+             ARDUINO UNO
+            ┌─────────────┐
+            │             │
+       5V ──┤             │
+            │             │
+   Pin 2 ───┤             │
+            │             │
+      GND ──┤             │
+            └──────┬──────┘
+                   │
+             ┌─────┴─────┐
+             │   DHT22   │
+             │           │
+             │ VCC DATA  │
+             │ GND       │
+             └───────────┘
+
+
+OUTPUT
+------
+
+Temperature: XX.XX °C
+Humidity: XX.XX %
+
+New readings are displayed every 2 seconds.
